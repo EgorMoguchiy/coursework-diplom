@@ -47,7 +47,7 @@ export default function SetAvatar() {
         );
         navigate("/");
       } else {
-        toast.error("Error setting avatar. Please try again.", toastOptions);
+        toast.error("Ошибка, попробуйте еще раз.", toastOptions);
       }
     }
   };
@@ -73,7 +73,7 @@ export default function SetAvatar() {
       ) : (
         <Container>
           <div className="title-container">
-            <h1>Pick an Avatar as your profile picture</h1>
+            <h1>Выбрать</h1>
           </div>
           <div className="avatars">
             {avatars.map((avatar, index) => {
